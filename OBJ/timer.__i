@@ -1,0 +1,6 @@
+-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\FWLIB\inc -I..\USER -I..\SYSTEM\sys -I..\SYSTEM\delay -I..\SYSTEM\usart -I..\HARDWARE\pwm -I..\HARDWARE\timer -I..\HARDWARE\led -I..\HARDWARE\timer1
+-I E:\SHIYAN\Robot\USER\RTE
+-I D:\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+-I D:\MDK5\ARM\CMSIS\Include
+-D__UVISION_VERSION="514" -DSTM32F40_41xxx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER
+-o ..\obj\timer.o --omf_browse ..\obj\timer.crf --depend ..\obj\timer.d "..\HARDWARE\timer\timer.c"
